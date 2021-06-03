@@ -1,0 +1,295 @@
+:root {
+--light-yellow: rgb(255, 246, 229);
+--petrol: rgb(38, 76, 94);
+--blackish: #333;
+--the-font:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.body {
+    margin: 0;
+    background-color: var(--light-yellow);
+    /* overflow-x: hidden; */
+}
+
+.main-container {
+    display: grid;
+    align-content: center;
+    position: relative;
+}
+
+.header-container {
+    width: 100%;
+    height: 60px;
+}
+
+/* NAVBAR Section */
+
+.top-logo-container {
+    display: flex;
+    justify-content: center;
+    background-color: var(--light-yellow);
+}
+
+.img-logo {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    filter: invert(24%) sepia(70%) saturate(343%) hue-rotate(154deg) brightness(94%) contrast(94%);
+}
+/* https://codepen.io/sosuke/pen/Pjoqqp here you can change the color of SVG file ;) */
+
+.nav-placeholder {
+    display: block;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    height: 180px;
+}
+
+.div-navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    /* overflow: hidden; */
+    background-color: var(--blackish);
+}
+
+.navbar a {
+    display: block;
+    width: 200px;
+    background-color: var(--blackish);
+}
+
+.navbar li a {
+    display: block;
+    color: var(--light-yellow);
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #111;
+}
+
+.nav-button-text-container {
+    height: 95%;
+    width: 100%;
+    line-height: 76px;
+    font-family: var(--the-font);
+}
+
+.navbar li a:hover > .underline {
+    width: 100%;
+}
+
+.navbar-underline {
+    margin: auto;
+    background-color: var(--light-yellow);
+    width: 0%;
+    height: 5%;
+    transition: width .2s ease-in-out ;
+}
+
+/* MAIN BODY Section */
+.main-body {
+    margin-top: 200px;
+    width: 60%;
+    height: 100%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: var(--light-yellow);
+}
+
+.main-body-text {
+    font-family: var(--the-font);
+    margin-top: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: #333;
+}
+
+/* CONTACT SECTION */
+.contact-forms-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    /* align-items: center; */
+    width: 70%;
+    margin-left: 15vw;
+}
+.contact-top-banner-polygon {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    height: 400px;
+    width: 100vw;
+    background-color: var(--petrol);
+    background-image: url(../assets/images/bannercontact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 65%;
+    clip-path: polygon(0% 0%,100% 0%,100% 80%,0% 100%);
+ }
+
+#contact-banner-text {
+    position: absolute;
+    display: flex;
+    text-align: center; 
+    align-self: center; 
+    justify-self: center; 
+    top: 8vw;
+    left: 20vw;
+}
+
+.contact-body-text {
+    width: 60%;
+    line-height: 2;
+}
+.contact-body-text-hl1 {
+    font-weight: bold; 
+    font-size: 3vmin;
+    line-height: 4.7;
+}
+
+/* .top-banner-rectangle {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    height: 0px;
+    width: 0vw;
+    border-bottom: 90px solid transparent ;
+    border-left: 100vw solid var(--petrol);
+    border-right: 0px solid transparent;
+    border-top: 200px solid var(--petrol);
+} */
+
+.contact-heading-title {
+    margin-top: 40px;
+    font-family: var(--the-font);
+    font-size: xx-large;
+    justify-self: center;
+}
+.contact-input-text {
+    color: grey;
+    padding-left: 10px;
+    height:40px;
+    line-height:40px;
+    outline: none;
+    border:solid 4px transparent;
+}
+.contact-body-form {
+    font-style: normal;
+    margin-top: 70px;
+}
+
+#privacy-policy-text {
+    line-height: 2px;
+    height: 50px;
+}
+
+.Submit-container {
+    line-height:40px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+#contact-submit
+{
+    top: 100vw;
+    width:100px;
+    height:40px;
+    background-color: var(--light-yellow);
+    text-align: center;
+    border-radius: 2px;
+    color: var(--petrol);
+    border:solid thin var(--blackish);
+}
+
+#contact-submit:hover
+{
+    cursor:pointer;
+    background-color:var(--petrol);
+    color:var(--light-yellow);
+}
+
+.error
+{
+    border-bottom: solid 4px red;
+}
+
+/*  BANNER  */
+.banner-placeholder {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-top: 100px;
+    /* z-index: 1; */
+}
+
+ /* General Top Banner */
+ .top-banner-rectangle { 
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    height: 620px;
+    width: 100vw;
+    background-color: var(--petrol);
+    clip-path: polygon(0% 0%,100% 0%,100% 80%,0% 100%);
+ }
+
+.top-banner-link {
+    display: block;
+    position: relative;
+    margin-top: 100px;
+    margin-top: 100px;
+}
+
+/* BANNER elements over design */
+.banner-elements-over-design {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    top: 5vw;
+    left: 22vw;
+}
+.banner-text {
+    line-height: 76px;
+    font-family: var(--the-font);
+    color: var(--light-yellow);
+}
+.banner-text-p {
+    text-indent: 50px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 230%;
+    width: 13em;
+    text-indent: 50px;
+    line-height: 1.7;
+    color: var(--light-yellow);
+}
+.top-banner-topbottom-text {
+    font-size: 80%;
+    letter-spacing: 3px;
+    transform: scaleY(1.8);
+    text-align: center;
+}
+.banner-photo {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 550px;
+}
+
+/* Footer Section */

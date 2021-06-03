@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="../main.js"></script>
+        <link type="text/css" rel="stylesheet" href="../CSS/main.css">
+    </head>
+    <body class="body">
+
+    <div class="main-container" >
+        
+        <!--Navigation Panel-->
+        <div class="nav-placeholder" id="nav-placeholder"></div>
+
+        <!--Top Banner-->
+        
+        <div class="a.top-banner-link">
+            <div class="contact-top-banner-polygon"> </div>
+        </div>
+
+        <a class="banner-elements-over-design top-banner-link" href="Contact.html" style="text-decoration: none;">
+            <div class="banner-text">
+                <div class="top-banner-topbottom-text"></div>
+
+                    <div id="contact-banner-text" class="banner-text-p">
+                        Contact Us
+                    </div>
+
+                <div class="top-banner-topbottom-text"></div>
+            </div>
+        </a>
+
+
+        <!--Contact us Container -->
+        <h1 class="contact-heading-title">Let's Start a Conversation</h1>
+
+        <div class="contact-forms-container">
+                
+            <div>
+                <div class="contact-body-text-hl1">
+                    Ask how we can help you: 
+                </div>
+                <div class="contact-body-text" >
+                    <div style="font-weight: bold;">See our platform in action</div>
+                    Request a personalized demo, or request a trial of DMBient Main Player.
+                </div>
+                <div class="contact-body-text">
+                    <div style="font-weight: bold;">Master the party's atmosphere</div>
+                    From DMBience courses to Story Tellers or Players, learn how to become better at your roles and how to rock the party with the right effects and scenario builds.
+                </div>
+                <div class="contact-body-text">
+                    <strong style="font-weight: bold;">Share your thoughts</strong>
+                    Tried it and found some bugs? Dug into it and found something unresponsive? Have new ideas for more content or how to improve your experience?<br> Don't hesitate to send us your opinion.
+                </div>
+            </div>
+
+            <div>
+                    <!-- Contact forms section -->
+                    <form class="contact-body-form" action="https://localhost:5001/WeatherForecast/test"  method="POST" data-errormessage="an error somewhere in the form. Figure it out" enctype="application/x-www-form-urlencoded"> 
+                        <strong class="contact-body-text">Please note: all fields are required.</strong>
+                        <div>
+                        <div><label class="contact-body-text">First name: </label> </div><input class="contact-input-text" type="text" id="fname" name="fname" size="60" >
+                        <div><label class="contact-body-text">Last name: </label> </div><input class="contact-input-text" type="text" id="lname" name="lname" size="60" >
+                        <div><label class="contact-body-text">E-mail: </label> </div><input class="contact-input-text" type="text" id="email" name="email"  size="60" pattern="[A-Za-z0-9]+[@]{1}" title="E-mail Address">
+                        <div><label class="contact-body-text">Phone number: </label> </div><input contact="contact-input-text" type="number" id="phnumber" name="phnumber" size="60"  minlength="10" >
+                        <div><label class="contact-body-text">Country: </label> </div><input class="contact-input-text" type="text" id="country" name="country" size="60"  minlength="8">
+                        <div><label class="contact-body-text">Password (test): </label> </div><input class="contact-input-text" type="password" id="pasw" name="password" size="60" >
+                        <div><label class="contact-body-text">Comments: </label> </div><input class="contact-input-text" type="text" id="comments" name="comments" size="60"  minlength="8" placeholder="Write your comments">
+                        </div> <!-- Na psaksw gia orisw tab index na briskei to DIV -->
+                        <input type="checkbox" name="privpol" id="privacy-policy-text">I would like to recieve more information about DMBience. I understand and agree to the <a href="total.html">privacy policy.</a>
+                        <div class="Submit-container">
+                            <div id="contact-submit" onclick="validateForm()">Submit</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
